@@ -40,6 +40,9 @@ Now that you're registered, logging in is a breeze. Here’s how:
 
 3. Click the **‘Sign in’** button. If your details are correct, you'll be taken directly to your personal **Dashboard**, where you can explore all the platform features.
 
+<!-- ![Introduction Image](../docs/_images/intro/Introduction.png) -->
+![Introduction Image](../_images/login.png)
+
 ---
 
 ## 🔐 Step 3: How to Reset Your Password?  
@@ -53,6 +56,16 @@ Forgot your password? No worries! You can easily reset it in just a few clicks:
 3. If the details match, you’ll see a confirmation message: **‘Password reset successful’**. An email containing the next steps will be sent to you. If it’s not in your inbox, check your spam or junk folder.
 
 ---
+
+## 🍪 Step 4: Cookie Acceptance 
+
+After successful login, a popup will appear asking you to accept cookies.
+
+1. If you click **‘Accept’**, you will be redirected to your **Dashboard**.
+2. If you decline, you will be logged out automatically for security reasons.  
+
+--- 
+
 
 ## ✨ Enjoy Your Platform Experience!  
 

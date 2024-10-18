@@ -1,68 +1,115 @@
 ---
 sidebar_position: 2
 ---
+
+
 # 🔒 Comprehensive Guide to File Anonymization  
 
-Welcome to your step-by-step guide on how to securely anonymize sensitive data using our platform. This process ensures that your data remains private while maintaining its utility. Follow the instructions below to upload, process, and save your anonymized files with ease.
+Welcome to the professional documentation for securely anonymizing sensitive data using our platform. This guide will walk you through the entire process, from file upload to applying anonymization configurations and saving your anonymized files.
 
 ---
 
-## 📤 Step 1: Upload Your File
+## Step 1: Select New FileSafe Run
 
-The first step in the anonymization process is uploading your data file. You can upload either an **.xlsx** or **.csv** file from your device by clicking the **‘Choose a file’** button. Here's what to do:
+To begin, select a new FileSafe run from the sidebar. This will initiate the anonymization process.
+
+---
+
+## 📤 Step 2: Upload Your File
+
+Upload your data file in **.xlsx** or **.csv** format by following these steps:
 
 1. **Click** the **‘Choose a file’** button.
-2. **Select** the file you want to anonymize from your device.
-3. For a quick test, you can use one of our **sample files** to explore the process.
+2. **Select** your file from your device.
+3. You can use one of the available **sample files** to explore the process.
 
-📝 **Important**: The first row of your spreadsheet will be treated as the **header** and used as field names in subsequent steps. Double-check your headers to ensure they’re labeled correctly.
-
----
-
-## 🛠️ Step 2: Select Data Types & Utility Parameters  
-
-After uploading your file, it’s time to configure the **data types** and **utility parameters** for each field name. This is a critical step to ensure the proper anonymization of your data. Follow these steps:
-
-1. **Review** each field name derived from the header of your file.
-2. **Assign** the appropriate data type (e.g., text, number, date) to each field.
-3. **Select** the utility parameters, which determine how the data will be anonymized. Utility parameters may include options such as:
-   - **Data masking** for sensitive text fields.
-   - **Generalization** for numerical ranges.
-   - **Suppression** for fields that must be entirely hidden.
-
-🔧 **Pro Tip**: Choose utility parameters carefully, as they affect the level of privacy and usability of the anonymized data. 
+📝 **Note**: The first row of your file will be treated as the **header**, and the platform will use it as field names for the anonymization process. Ensure your headers are accurate.
 
 ---
 
-## 💾 Step 3: Save the Anonymized File  
+## Step 3: Select Collaboration Group or Create a New One
 
-Once you've configured all data types and utility parameters, it's time to save the anonymized version of your file. Here’s how:
+Collaboration groups help maintain consistency across different datasets. Select an existing group or create a new one to ensure uniform application of anonymization rules across projects.
 
-1. **Select** the **file group**, **utility set**, and confirm the parameters for anonymization.
-2. Click the **‘Execute’** button. A pop-up window will appear, prompting you to name your anonymized file.
-3. **Enter the desired file name** for easy identification in your history.
-4. Click the **‘Submit’** button to start the anonymization process.
-
-🚀 **What Happens Next?**  
-After submission, you’ll be redirected to the **History page**, where you can view the job status and track progress in real-time.
+![collaboration](../_images/image.png)
+![create](../_images/new-file-safe-run/create-group.png)
 
 ---
 
-## 🔄 Step 4: Monitor Job Status  
+## 🛠️ Step 4: Configure Utility Parameters and Conditions
 
-To check the progress of your anonymization job, simply navigate to the **History page** and:
+After uploading your file, it’s time to configure **utility parameters** and their corresponding **conditions** for each data field.
 
-1. Use the **‘Refresh’ button** located in the top-right corner of the page.
-2. The status of the job (e.g., **‘In Progress’**, **‘Completed’**) will be updated on this page.
-   
-🕵️‍♂️ **Need updates in real time?** The refresh button helps you stay on top of the process and know when your file is ready for download.
+### Utility Parameters and Conditions Table
+
+| **Utility Parameter**  | **Conditions**                             | **Description**                                                                |
+| ---------------------- | ------------------------------------------ | ------------------------------------------------------------------------------ |
+| **No Change**          | N/A                                        | Leaves the data unchanged.                                                     |
+| **Clear Values**       | N/A                                        | Clears or wipes out the data in the selected fields.                           |
+| **Email**              | Dummy Domain, Keep Domain, All Caps        | Anonymizes email addresses with additional formatting options.                 |
+| **Name**               | First Name, Last Name, All Caps, Full Name | Handles name fields with specific conditions for first name, last name, etc.   |
+| **Consistent ID**      | N/A                                        | Generates a consistent identifier for tracking across records.                 |
+| **Fixed Value**        | N/A                                        | Replaces the field with a fixed value.                                         |
+| **Date**               | Same Year, Random, Adult, Consistent       | Anonymizes date fields while retaining some options for consistency.           |
+| **Phone Number**       | N/A                                        | Handles phone numbers by formatting them or generating new numbers.            |
+| **Number**             | N/A                                        | Randomizes or anonymizes numerical data.                                       |
+| **Custom Expressions** | N/A                                        | Allows custom regular expressions or formats to be applied to the data fields. |
+
+---
+![collaboration](../_images/new-file-safe-run/utility%20parameters.png)
+
+### Condition-Specific Details:
+
+1. **Email Conditions**:
+   - **Dummy Domain**: Replaces the email domain (e.g., `example.com`).
+   - **Keep Domain**: Retains the original domain while anonymizing the rest of the email.
+   - **All Caps**: Converts the entire email to uppercase.
+
+2. **Name Conditions**:
+   - **First Name**: Anonymizes only the first name field.
+   - **Last Name**: Anonymizes only the last name field.
+   - **All Caps**: Converts the name to uppercase.
+   - **Full Name**: Anonymizes the entire full name as a single unit.
+
+3. **Date Conditions**:
+   - **Same Year**: Keeps the year consistent across all records.
+   - **Random**: Randomizes the entire date.
+   - **Adult**: Ensures the date reflects an adult age.
+   - **Consistent**: Keeps the date consistent across records.
 
 ---
 
-## 🎯 Final Thoughts: Seamless File Anonymization  
+## 💾 Step 5: Save the Anonymized File
 
-By following these four simple steps, you'll have your file anonymized and ready to use in no time! Anonymizing data is key to ensuring privacy while still making the information useful for analysis, reporting, and sharing.
+Once the utility parameters and conditions have been set, proceed to save the anonymized version of your file:
 
-If you encounter any difficulties or have questions, don’t hesitate to contact our support team. We’re here to help you every step of the way.  
+1. **Select** the **file group**, **utility set**, and confirm the parameters.
+2. Click the **‘Execute’** button.
+3. A pop-up will appear. **Enter the desired file name**.
+4. Click **‘Submit’** to start the anonymization process.
 
-✨ **Start your anonymization journey today and protect your data effortlessly!**
+🚀 **Post-Submission**: After submission, you’ll be redirected to the **History page** where you can track the status of your job.
+
+---
+
+## 🔄 Step 6: Monitor Job Status
+
+Navigate to the **History page** to check the progress of your anonymization job:
+
+1. Use the **‘Refresh’ button** in the top-right corner.
+2. The status will update (e.g., **‘In Progress’**, **‘Completed’**).
+
+![history](../_images/history/file-safe.png)
+
+---
+
+## PII Type Derivation
+
+You can easily identify **PII (Personal Identifiable Information)** types by clicking on the respective button. This will categorize the fields that contain sensitive information, helping you apply the right anonymization rules.
+
+---
+
+## 🎯 Conclusion
+
+By following these steps, you can securely anonymize your data with ease. If you encounter any difficulties, our support team is always available to assist.
+
